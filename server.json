@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.aarif86/nsd-sg",
+  "title": "NSD.SG",
+  "description": "Put the page your AI made online at yourname.nsd.sg. Publish, update, list and remove sites.",
+  "version": "0.13.42",
+  "websiteUrl": "https://nsd.sg/",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://nsd.sg/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer key from https://nsd.sg/connect (sign up free, press one button)",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
