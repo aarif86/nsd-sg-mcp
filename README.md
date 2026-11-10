@@ -20,7 +20,7 @@ Works with Claude (web, desktop, Claude Code), ChatGPT, Codex, Cursor, Gemini CL
    - Cursor (`.cursor/mcp.json`): `{ "mcpServers": { "nsd": { "url": "https://nsd.sg/mcp/YOUR_KEY" } } }`
 3. Ask: "Put this page online as kopi-stall."
 
-Endpoint: `https://nsd.sg/mcp` (Streamable HTTP). The key goes in the address, or as `Authorization: Bearer <key>`.
+Endpoint: `https://nsd.sg/mcp` (Streamable HTTP). The key goes in the address, or as `Authorization: Bearer <key>`. Without a key, an app can still connect and see the tools below. Using them needs your key.
 
 ## Tools
 
@@ -30,6 +30,7 @@ Endpoint: `https://nsd.sg/mcp` (Streamable HTTP). The key goes in the address, o
 | `nsd_update` | Replace the page, the address stays the same, older copies are kept |
 | `nsd_list_sites` | Show your sites |
 | `nsd_get_site` | Details of one site |
+| `nsd_read_file` | Read a file of a live site, to make a small change |
 | `nsd_delete_site` | Remove a site |
 
 Up to 100 files or 8 MB per call. Files with JavaScript go up base64. The connector tells the AI this itself.

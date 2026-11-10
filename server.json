@@ -3,8 +3,28 @@
   "name": "io.github.aarif86/nsd-sg",
   "title": "NSD.SG",
   "description": "Put the page your AI made online at yourname.nsd.sg. Publish, update, list and remove sites.",
-  "version": "0.13.42",
+  "version": "0.14.5",
   "websiteUrl": "https://nsd.sg/",
+  "repository": {
+    "url": "https://github.com/aarif86/nsd-sg-mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://nsd.sg/assets/icon-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    },
+    {
+      "src": "https://nsd.sg/assets/favicon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    }
+  ],
   "remotes": [
     {
       "type": "streamable-http",
